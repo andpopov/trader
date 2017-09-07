@@ -1,0 +1,1 @@
+"%JAVA_HOME%\bin\java.exe" -classpath ".;..\lib\*" ru.sberbank.Main clients.txt orders.txt result.txt
