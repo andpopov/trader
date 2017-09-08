@@ -35,7 +35,7 @@ public class ClientRecordsTest {
         assertEquals("Wrong stock A amount", Long.valueOf(130L), client1.getStockAmount(new Stock("A")));
         assertEquals("Wrong stock B amount", Long.valueOf(240L), client1.getStockAmount(new Stock("B")));
         assertEquals("Wrong stock C amount", Long.valueOf(760L), client1.getStockAmount(new Stock("C")));
-        assertEquals("Wrong stock D amount, Long.valueOf(320L), client1.getStockAmount(new Stock("D")));
+        assertEquals("Wrong stock D amount", Long.valueOf(320L), client1.getStockAmount(new Stock("D")));
 
         Client client2 = clientRecords.getClients().get(1);
         assertEquals("Wrong name value", "C2", client2.getName());
