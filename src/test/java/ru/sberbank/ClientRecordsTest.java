@@ -32,18 +32,18 @@ public class ClientRecordsTest {
         Client client1 = clientRecords.getClients().get(0);
         assertEquals("Wrong name value", "C1", client1.getName());
         assertEquals("Wrong balance value", 1000L, client1.getBalance());
-        assertEquals("Wrong balance value", Long.valueOf(130L), client1.getStockAmount(new Stock("A")));
-        assertEquals("Wrong balance value", Long.valueOf(240L), client1.getStockAmount(new Stock("B")));
-        assertEquals("Wrong balance value", Long.valueOf(760L), client1.getStockAmount(new Stock("C")));
-        assertEquals("Wrong balance value", Long.valueOf(320L), client1.getStockAmount(new Stock("D")));
+        assertEquals("Wrong stock A amount", Long.valueOf(130L), client1.getStockAmount(new Stock("A")));
+        assertEquals("Wrong stock B amount", Long.valueOf(240L), client1.getStockAmount(new Stock("B")));
+        assertEquals("Wrong stock C amount", Long.valueOf(760L), client1.getStockAmount(new Stock("C")));
+        assertEquals("Wrong stock D amount, Long.valueOf(320L), client1.getStockAmount(new Stock("D")));
 
         Client client2 = clientRecords.getClients().get(1);
         assertEquals("Wrong name value", "C2", client2.getName());
         assertEquals("Wrong balance value", 4350L, client2.getBalance());
-        assertEquals("Wrong balance value", Long.valueOf(370L), client2.getStockAmount(new Stock("A")));
-        assertEquals("Wrong balance value", Long.valueOf(120L), client2.getStockAmount(new Stock("B")));
-        assertEquals("Wrong balance value", Long.valueOf(950L), client2.getStockAmount(new Stock("C")));
-        assertEquals("Wrong balance value", Long.valueOf(560L), client2.getStockAmount(new Stock("D")));
+        assertEquals("Wrong stock A amount", Long.valueOf(370L), client2.getStockAmount(new Stock("A")));
+        assertEquals("Wrong stock B amount", Long.valueOf(120L), client2.getStockAmount(new Stock("B")));
+        assertEquals("Wrong stock C amount", Long.valueOf(950L), client2.getStockAmount(new Stock("C")));
+        assertEquals("Wrong stock D amount", Long.valueOf(560L), client2.getStockAmount(new Stock("D")));
     }
 
     /**
